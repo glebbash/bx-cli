@@ -1,10 +1,10 @@
 #!/usr/bin/env node
+import { readFileSync } from "fs"
 import { usage } from "yargs"
 import { Blocks } from "bx-lang"
 import { Context } from "bx-lang/dist/context"
 import { Scope } from "bx-lang/dist/engine/scope"
 import { startRepl } from "./repl"
-import { readFileSync } from "fs"
 
 const usageMsg = "Usage: [file-name]"
 const args = usage(usageMsg).argv._
