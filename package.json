@@ -1,0 +1,67 @@
+{
+  "name": "bx-cli",
+  "version": "1.0.2",
+  "description": "Blocks programming language Node.js cli",
+  "main": "dist/index.js",
+  "bin": {
+    "bx": "dist/index.js"
+  },
+  "scripts": {
+    "test": "tsc && nyc mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glebbash/bx-cli.git"
+  },
+  "author": "glebbash",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glebbash/bx-cli/issues"
+  },
+  "homepage": "https://github.com/glebbash/bx-cli#readme",
+  "dependencies": {
+    "bx-lang": "^1.0.2",
+    "terminal-kit": "^1.43.0",
+    "yargs": "^15.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.6.3",
+    "@types/terminal-kit": "^1.28.2",
+    "@types/yargs": "^15.0.5"
+  },
+  "mocha": {
+    "require": [
+      "ts-node/register",
+      "source-map-support/register"
+    ],
+    "recursive": true,
+    "spec": "tests/**.test.ts"
+  },
+  "prettier": {
+    "semi": false,
+    "tabWidth": 4,
+    "trailingComma": "all"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "commonjs": true,
+      "es6": true
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "rules": {
+      "semi": [
+        "error",
+        "never"
+      ]
+    }
+  }
+}
