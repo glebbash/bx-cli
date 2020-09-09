@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/glebbash/bx-cli#readme",
   "dependencies": {
-    "bx-lang": "^1.0.2",
+    "bx-lang": "^1.1.0",
     "terminal-kit": "^1.43.0",
     "yargs": "^15.4.1"
   },
