@@ -1,6 +1,6 @@
 {
   "name": "bx-cli",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Blocks programming language Node.js cli",
   "main": "dist/index.js",
   "bin": {
