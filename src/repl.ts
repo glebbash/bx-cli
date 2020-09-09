@@ -1,5 +1,5 @@
 import { terminal } from "terminal-kit"
-import type { Context } from "bx-lang/dist/context"
+import type { Context } from "bx-lang/dist/core"
 
 const options = {
     history: [] as string[],

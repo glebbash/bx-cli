@@ -2,7 +2,7 @@
 import { readFileSync } from "fs"
 import { usage } from "yargs"
 import { Blocks } from "bx-lang"
-import { Context } from "bx-lang/dist/context"
+import { Context } from "bx-lang/dist/core"
 import { Scope } from "bx-lang/dist/engine/scope"
 import { startRepl } from "./repl"
 
