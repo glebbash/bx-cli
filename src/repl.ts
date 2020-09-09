@@ -36,7 +36,9 @@ async function repl(ctx: Context) {
     repl(ctx)
 }
 
+const { version } = require("../package.json")
+
 export function startRepl(ctx: Context) {
-    console.log("Blocks " + process.env.npm_package_version)
+    console.log("Blocks " + version)
     repl(ctx)
 }
